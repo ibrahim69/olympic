@@ -1,0 +1,896 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" type="image/png" href="assets/images/favicon-96x96.png" sizes="96x96">
+
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,600,700|Roboto+Condensed:300,400,700&amp;display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="assets/css/fontawesome-all.min.css">
+    <!-- Slick Js -->
+    <link rel="stylesheet" href="assets/css/slick.css">
+    <link rel="stylesheet" href="assets/css/slick-theme.css">
+    <!-- Instagram Feed -->
+    <link rel="stylesheet" href="assets/css/masongram.min.css">
+
+    <title>Olympics</title>
+
+</head>
+<body>
+
+    <!-- Navbar -->
+    <header class="mega-header">
+        <!-- header-top -->
+        <div class="header-top">
+            <div class="container">
+                <div class="row">
+                    <a class="navbar-brand" href="#">
+                        <img src="assets/images/logo.png" alt="Logo">
+                    </a>
+
+                    <div class="social-links mr-right">
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    <span class="fab fa-facebook-square"></span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span class="fab fa-instagram"></span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span class="fas fa-share"> Share</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span class="fab fa-twitter"></span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span class="fab fa-youtube"></span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">Fr</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+        </div>
+        <!-- ./header-top -->
+
+        <!-- header-main -->
+        <div class="header-main">
+            <div class="container">
+                <div class="row">
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav">
+                            <li class="nav-item drop-down">
+                                <a class="nav-link" href="#">
+                                    Olympic Games
+                                </a>
+                                <div class="container mega-menu fadeIn animated">
+                                    <div class="filter-button-group">
+                                        <a class="button active" onclick="filterSelection('all')">show all</a>
+                                        <a class="button" onclick="filterSelection('youth')">Youth Olympic Games</a>
+                                        <a class="button" onclick="filterSelection('winter')">Olympic winter games</a>
+                                        <a class="button" onclick="filterSelection('olympic')">Olympic Games</a>
+                                    </div>
+                                    <div class="row">
+                                        <div class="grid">
+                                            <div class="element-item youth show">
+                                                <ul class="list">
+                                                    <li class="summergames">
+                                                        <a href="#">
+                                                            <div class="image">
+                                                                <div class="games35 losangles2028">&nbsp;</div>
+                                                            </div>
+                                                            <strong class="name">LA 2028</strong>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+
+                                                <ul class="list">
+                                                    <li class="summergames">
+                                                        <a href="#">
+                                                            <div class="image">
+                                                                <div class="games35 beijing2008">&nbsp;</div>
+                                                            </div>
+                                                            <strong class="name">Beijing 2028</strong>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+
+                                                <ul class="list">
+                                                    <li class="summergames">
+                                                        <a href="#">
+                                                            <div class="image">
+                                                                <div class="games35 seoul1988">&nbsp;</div>
+                                                            </div>
+                                                            <strong class="name">Seoul 1988</strong>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+
+                                                <ul class="list">
+                                                    <li class="summergames">
+                                                        <a href="#">
+                                                            <div class="image">
+                                                                <div class="games35 mexico1968">&nbsp;</div>
+                                                            </div>
+                                                            <strong class="name">Mexico 1968</strong>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+
+                                                <ul class="list">
+                                                    <li class="summergames">
+                                                        <a href="#">
+                                                            <div class="image">
+                                                                <div class="games35 london1948">&nbsp;</div>
+                                                            </div>
+                                                            <strong class="name">London 1948</strong>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+
+                                            <div class="element-item winter show">
+                                                <ul class="list">
+                                                    <li class="summergames">
+                                                        <a href="#">
+                                                            <div class="image">
+                                                                <div class="games35 mexico1968">&nbsp;</div>
+                                                            </div>
+                                                            <strong class="name">Mexico 1968</strong>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+
+                                                <ul class="list">
+                                                    <li class="summergames">
+                                                        <a href="#">
+                                                            <div class="image">
+                                                                <div class="games35 seoul1988">&nbsp;</div>
+                                                            </div>
+                                                            <strong class="name">Seoul 1988</strong>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+
+                                            <div class="element-item olympic show">
+                                                <ul class="list">
+                                                    <li class="summergames">
+                                                        <a href="#">
+                                                            <div class="image">
+                                                                <div class="games35 beijing2008">&nbsp;</div>
+                                                            </div>
+                                                            <strong class="name">Beijing 2028</strong>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+
+                                                <ul class="list">
+                                                    <li class="summergames">
+                                                        <a href="#">
+                                                            <div class="image">
+                                                                <div class="games35 seoul1988">&nbsp;</div>
+                                                            </div>
+                                                            <strong class="name">Seoul 1988</strong>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- <div style="text-align:center">
+                                        <span class="dot" onclick="currentSlide(1)"></span> 
+                                        <span class="dot" onclick="currentSlide(2)"></span> 
+                                        <span class="dot" onclick="currentSlide(3)"></span> 
+                                    </div> -->
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Athlete</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Teams/Noc</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    News
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="#">Action</a>
+                                    <a class="dropdown-item" href="#">Another action</a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item" href="#">Something else here</a>
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Shop</a>
+                            </li>
+                        </ul>
+                        <div class="search">
+                            <img src="assets/images/search.png" alt="search">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ./header-main -->
+    </header>
+    <!-- ./Navbar -->
+
+    <!-- Banner Home -->
+    <section class="banner-home">
+        <div class="bg-image">
+        </div>
+        <div class="text-box right">
+            <div class="bg-color" style="background-color: rgba(0, 129, 200, 0.9);">
+                <strong class="title">WORLD CHAMPION TESS LEDEUX BRINGS BIG AIR SKIING TO THE BEIJING GAMES 2022!</strong>
+                <div class="mobile-hide">
+                    <p>Big air skiing made its Olympic debut at the Winter Youth Olympic Games (YOG) Lausanne 2020, and will be added to slopestyle as an acrobatic freestyle ski discipline at Beijing in 2022. Overview with 18-year-old French athlete Tess Ledeux.</p>
+                    <a href="#">
+                        Read More
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ./Banner Home -->
+
+    <!-- Wrapper Content -->
+    <section class="wrapper-content">
+        <!-- Latest News -->
+        <div class="latest-news">
+            <div class="container">
+                <div class="heading">
+                    <h2>Latest News</h2>
+                    <a class="links" href="#">
+                        Go to News
+                        <i class="fas fa-long-arrow-alt-right"></i>
+                    </a>
+                </div>
+
+                <!-- carousel -->
+                <div class="carousel slider">
+                    <div>
+                        <article>
+                            <img src="assets/images/carousel-1.jpg" alt="Carousel 1">
+                            <span class="news-topic-label sapporo1972">Sapporo 1972</span>
+                            <h2>
+                                <a href="#" tabindex="0">
+                                    Historic gold and legendary podium sweep for Japan’s ski jumpers at Sapporo 1972
+                                </a>
+                            </h2>
+                            <span class="time">06 Feb 2020</span>
+                        </article>
+                    </div>
+
+                    <div>
+                        <article>
+                            <img src="assets/images/carousel-2.jpg" alt="Carousel 2">
+                            <span class="news-topic-label innsburck1976">INNSBRUCK 1976</span>
+                            <h2>
+                                <a href="#" tabindex="0">
+                                    5 FEBRUARY 1976, INNSBRUCK – FRANZ KLAMMER WRITES THE GREATEST PAGE OF HIS STORY
+                                </a>
+                            </h2>
+                            <span class="time">05 Feb 2020</span>
+                        </article>
+                    </div>
+
+                    <div>
+                        <article>
+                            <img src="assets/images/carousel-3.jpg" alt="Carousel 3">
+                            <span class="news-topic-label innsburck1964">INNSBRUCK 1964</span>
+                            <h2>
+                                <a href="#" tabindex="0">
+                                    ON 4 FEBRUARY 1964, THOMAS KÖHLER AND ORTRUN ENDERLEIN BECAME THE FIRST OLYMPIC CHAMPIONS IN LUGE
+                                </a>
+                            </h2>
+                            <span class="time">04 Feb 2020</span>
+                        </article>
+                    </div>
+
+                    <div>
+                        <article>
+                            <img src="assets/images/carousel-4.jpg" alt="Carousel 4">
+                            <span class="news-topic-label tokyo2020">Tokyo 2020</span>
+                            <h2>
+                                <a href="#" tabindex="-1">
+                                    SUPERB TOKYO 2020 VOLLEYBALL VENUE OPENED TO THE PUBLIC FOR THE FIRST TIME
+                                </a>
+                            </h2>
+                            <span class="time">03 Feb 2020</span>
+                        </article>
+                    </div>
+
+                    <div>
+                        <article>
+                            <img src="assets/images/carousel-5.jpg" alt="Carousel 5">
+                            <span class="news-topic-label innsburck1964">INNSBRUCK 1964</span>
+                            <h2>
+                                <a href="#" tabindex="-1">
+                                    THE UNIQUE ACHIEVEMENT OF SISTERS MARIELLE AND CHRISTINE GOITSCHEL AT INNSBRUCK 1964
+                                </a>
+                            </h2>
+                            <span class="time">03 Feb 2020</span>
+                        </article>
+                    </div>
+
+                    <div>
+                        <article>
+                            <img src="assets/images/carousel-6.jpg" alt="Carousel 6">
+                            <span class="news-topic-label beijing2022">Beijing 2022</span>
+                            <h2>
+                                <a href="#" tabindex="-1">
+                                    WOMEN’S MONOBOB – A NEW OLYMPIC DISCIPLINE IS MAKING HEADWAY
+                                </a>
+                            </h2>
+                            <span class="time">01 Feb 2020</span>
+                        </article>
+                    </div>
+
+                    <div>
+                        <article>
+                            <img src="assets/images/carousel-7.jpg" alt="Carousel 7">
+                            <span class="news-topic-label tokyo2020">Tokyo 2020</span>
+                            <h2>
+                                <a href="#" tabindex="-1">
+                                    REFUGEE SHOOTERS TAKE BINDRA AND CAMPRIANI TIPS ON PATH TO TOKYO
+                                </a>
+                            </h2>
+                            <span class="time">31 Jan 2020</span>
+                        </article>
+                    </div>
+
+                    <div>
+                        <article>
+                            <img src="assets/images/carousel-8.jpg" alt="Carousel 8">
+                            <span class="news-topic-label tokyo2020">Tokyo 2020</span>
+                            <h2>
+                                <a href="#" tabindex="-1">
+                                    THE OLYMPIC FOUNDATION FOR CULTURE AND HERITAGE CREATES THE FIRST “OLYMPIC AGORA” IN TOKYO
+                                </a>
+                            </h2>
+                            <span class="time">30 Jan 2020</span>
+                        </article>
+                    </div>
+
+                    <div>
+                        <article>
+                            <img src="assets/images/carousel-9.jpg" alt="Carousel 9">
+                            <span class="news-topic-label beijing2022">Beijing 2022</span>
+                            <h2>
+                                <a href="#" tabindex="-1">
+                                    MIXED EVENTS ENRICH THE WINTER GAMES PROGRAMME
+                                </a>
+                            </h2>
+                            <span class="time">28 Jan 2020</span>
+                        </article>
+                    </div>
+                </div>
+                <!-- ./carousel -->
+            </div>
+        </div>
+        <!-- ./Latest News -->
+
+        <hr class="alt clear">
+
+        <!-- Olympic Games -->
+        <div class="olympic-games">
+            <div class="container">
+                <div class="heading">
+                    <h2>Olympic Games</h2>
+                </div>
+
+                <!-- carousel -->
+                <div class="carousel-list-2 slider">
+                    <div>
+                        <img src="assets/images/olympic-games-1.png" alt="Olympic Games 1">
+                        Athens 1896
+                    </div>
+                    
+                    <div>
+                        <img src="assets/images/olympic-games-2.png" alt="Olympic Games 2">
+                        Paris 1900
+                    </div>
+
+                    <div>
+                        <img src="assets/images/olympic-games-3.png" alt="Olympic Games 3">
+                        ST LOUIs 1904
+                    </div>
+
+                    <div>
+                        <img src="assets/images/olympic-games-4.png" alt="Olympic Games 4">
+                        London  1908
+                    </div>
+
+                    <div>
+                        <img src="assets/images/olympic-games-5.png" alt="Olympic Games 5">
+                        Stokckholm 1912
+                    </div>
+
+                    <div>
+                        <img src="assets/images/olympic-games-6.png" alt="Olympic Games 6">
+                        Antwerp 1920
+                    </div>
+
+                    <div>
+                        <img src="assets/images/olympic-games-7.png" alt="Olympic Games 7">
+                        ST LOUIs 1904
+                    </div>
+
+                    <div>
+                        <img src="assets/images/olympic-games-8.png" alt="Olympic Games 8">
+                        London  1908
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="ads">
+            <img src="assets/images/ads.jpeg" alt="Ads Image">
+        </div>
+
+        <hr class="alt clear">
+
+        <div class="featured-news">
+            <div class="container">
+                <div class="heading">
+                    <h2>Featured News</h2>
+                    <a href="#" class="links">
+                        Read More
+                        <i class="fas fa-long-arrow-alt-right"></i>
+                    </a>
+                </div>
+    
+                <div class="box-area">
+                    <div class="row" style="margin-bottom: 50px;">
+                        <article class="box">
+                            <div class="image">
+                                <img src="assets/images/featured-news-1.jpg" alt="Featured News 1">
+                                <span class="news-topic-label tokyo2020">Tokyo 2020</span>
+                            </div>
+
+                            <h2>
+                                <a href="#">TOKYO’S OLYMPIC STADIUM UNVEILED AND READY FOR THE GAMES</a>
+                            </h2>
+
+                            <span class="time">16 Dec 2019</span>
+                        </article>
+
+                        <article class="box">
+                            <div class="image">
+                                <img src="assets/images/featured-news-2.jpg" alt="Featured News 2">
+                                <span class="news-topic-label tokyo2020">Tokyo 2020</span>
+                            </div>
+
+                            <h2>
+                                <a href="#">TOKYO 2020 OLYMPIC GAMES DETAILED EVENTS SCHEDULE ANNOUNCED</a>
+                            </h2>
+
+                            <span class="time">16 Apr 2019</span>
+                        </article>
+                    </div>
+
+                    <div class="row">
+                        <article class="box">
+                            <div class="image">
+                                <img src="assets/images/featured-news-3.jpg" alt="Featured News 3">
+                                <span class="news-topic-label tokyo2020">Tokyo 2020</span>
+                            </div>
+
+                            <h2>
+                                <a href="#">TOKYO 2020 CELEBRATES THE ARRIVAL OF THE OLYMPIC RINGS</a>
+                            </h2>
+
+                            <span class="time">24 Jan 2020</span>
+                        </article>
+
+                        <article class="box">
+                            <div class="image">
+                                <img src="assets/images/featured-news-4.jpg" alt="Featured News 4">
+                                <span class="news-topic-label tokyo2020">Tokyo 2020</span>
+                            </div>
+
+                            <h2>
+                                <a href="#">TOKYO 2020 TICKET DESIGNS UNVEILED</a>
+                            </h2>
+
+                            <span class="time">15 Jan 2020</span>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <hr class="alt clear">
+
+        <!-- social-wall -->
+        <div class="social-wall">
+            <div class="container">
+                <div class="heading">
+                    <h2>Lausane Wall</h2>
+                </div>
+                <div class="wrapper-social"></div>
+                <div class="load-more">
+                    <button class="btn btn-danger" type="button"> + </button>
+                </div>
+            </div>
+        </div>
+        <!-- ./social-wall -->
+
+        <hr class="alt clear">
+
+        <!-- Olympic Channel -->
+        <div class="olympic-channel">
+            <div class="container">
+                <div class="heading">
+                    <a href="#">
+                        <img src="assets/images/olympic-channel-logo.png" alt="Olympic Channel Logo">
+                    </a>
+
+                    <a href="#" class="links">
+                        Watch More On The Olympic Channel
+                        <i class="fas fa-long-arrow-alt-right"></i>
+                    </a>
+                </div>
+                <div class="cards-area">
+                    <div class="row" style="margin-bottom: 40px;">
+                        <article class="card w-49">
+                            <img src="assets/images/olympic-channel-1.jpeg" alt="Olympic Channel 1" style="height: 185px;">
+                            <div class="card-body">
+                                <h5 class="card-title">
+                                    <a href="#">
+                                        PODCAST: FIFA PRESIDENT GIANNI INFANTINO ON VAR AND WOMEN'S FOOTBALL
+                                    </a>
+                                </h5>
+                            </div>
+                        </article>
+
+                        <article class="card w-24">
+                            <img src="assets/images/olympic-channel-2.jpeg" alt="Olympic Channel 2">
+                            <div class="card-body">
+                                <h5 class="card-title">
+                                    <a href="#">
+                                        HANYU USING OLYMPIC WINNING ROUTINES IN BID FOR CAREER 'SUPER SLAM' AT FOUR CONTINENTS 
+                                    </a>
+                                </h5>
+                            </div>
+                        </article>
+
+                        <article class="card w-24">
+                            <img src="assets/images/olympic-channel-3.jpeg" alt="Olympic Channel 3">
+                            <div class="card-body">
+                                <h5 class="card-title">
+                                    <a href="#">
+                                        OLYMPIC CHANNEL TO PRESENT EXCLUSIVE DIGITAL COVERAGE OF BOXING OLYMPIC QUALIFYING EVENTS FOR TOKYO 2020
+                                    </a>
+                                </h5>
+                            </div>
+                        </article>
+                    </div>
+
+                    <div class="row">
+                        <article class="card w-24">
+                            <img src="assets/images/olympic-channel-4.jpeg" alt="Olympic Channel 4">
+                            <div class="card-body">
+                                <h5 class="card-title">
+                                    <a href="#">
+                                        FROM THE BEAUTIFUL GAME TO CYCLING FAME: REMCO EVENEPOEL'S "DREAM PLAN" TO WIN OLYMPIC GOLD
+                                    </a>
+                                </h5>
+                            </div>
+                        </article>
+
+                        <article class="card w-24">
+                            <img src="assets/images/olympic-channel-5.png" alt="Olympic Channel 5">
+                            <div class="card-body">
+                                <h5 class="card-title">
+                                    <a href="#">
+                                        BEST MOMENTS OF LAUSANNE 2020 | WINTER YOUTH OLYMPIC GAMES 2020
+                                    </a>
+                                </h5>
+                            </div>
+                        </article>
+
+                        <article class="card w-24">
+                            <img src="assets/images/olympic-channel-6.jpeg" alt="Olympic Channel 6">
+                            <div class="card-body">
+                                <h5 class="card-title">
+                                    <a href="#">
+                                        TOKYO 2020 SCHEDULE: OLYMPIC CHANNEL HIGHLIGHTS AND DAY-BY-DAY GUIDE 
+                                    </a>
+                                </h5>
+                            </div>
+                        </article>
+
+                        <article class="card w-24">
+                            <img src="assets/images/olympic-channel-7.jpeg" alt="Olympic Channel 7">
+                            <div class="card-body">
+                                <h5 class="card-title">
+                                    <a href="#">
+                                        BRIDGESTONE INSPIRES YOU TO OVERCOME THE OBSTACLES AND ACHIEVE YOUR GOALS
+                                    </a>
+                                </h5>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ./Olympic Channel -->
+
+        <div class="follow-us">
+            <div class="container">
+                <div class="box-area row">
+                    <div class="box facebook">
+                        <a href="#">
+                            <i class="fab fa-facebook-square"></i>
+                            <p>Join Our 18M Facebook Fans</p>
+                        </a>
+                    </div>
+    
+                    <div class="box twitter">
+                        <a href="#">
+                            <i class="fab fa-twitter"></i>
+                            <p>Come and Join The Conversation on Twitter</p>
+                        </a>
+                    </div>
+    
+                    <div class="box youtube">
+                        <a href="#">
+                            <i class="fab fa-youtube"></i>
+                            <p>Thousands of Olympic videos online</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <hr class="alt clear">
+    </section>
+    <!-- ./Wrapper Content -->
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-top">
+            <div class="container">
+                <div class="row">
+                    <div class="links-1">
+                        <p>Olympic Games</p>
+                        <ul>
+                            <li>
+                                <a href="#">All Olympic Games</a>
+                            </li>
+                            <li>
+                                <a href="#">Summer Olympics</a>
+                            </li>
+                            <li>
+                                <a href="#">Winter Olympics</a>
+                            </li>
+                            <li>
+                                <a href="#">Youth Olympic Games</a>
+                            </li>
+                            <li>
+                                <a href="#">Result</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="links-2">
+                        <p>Media</p>
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    MEDIA RESOURCES
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    LATEST NEWS
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    KEY EVENTS CALENDAR
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    PUBLICATIONS
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    DOCUMENTS
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    FAQ
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="links-3">
+                        <p>Behind The Games</p>
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    TORCH RELAY
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    MASCOTS
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    OLYMPIC MEDALS
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    ANCIENT GAMES
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="links-4">
+                        <p>PROGRAMMES</p>
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    OLYMPIC SOLIDARITY
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    SPORT AND ACTIVE SOCIETY
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    WOMEN IN SPORT
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    SPORT FOR HOPE
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    OLYMPIC LEGACY
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="links-5">
+                        <p>The IOC</p>
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    THE ORGANISATION
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    THE OLYMPIC RINGS
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    THE OLYMPIC MOTTO
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    OLYMPIC AGENDA 2020
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    SPONSORS
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    CAREERS AT THE IOC
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    OLYMPIC STUDIES CENTRE
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    OLYMPIC WORLD LIBRARY
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-left">
+                        <div class="logo-footer">
+                            <a href="#">
+                                <img src="assets/images/logo.png" alt="Logo Footer">
+                            </a>
+                        </div>
+                        <div class="copyright">
+                            <p>© Copyright 2020. All rights reserved</p>
+                            <p>
+                                <a href="#">Terms of Service</a>
+                                    | 
+                                <a href="#">Privacy Policy</a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="footer-right">
+                        <div class="newsletter">
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text">
+                                        <i class="fas fa-envelope"></i>
+                                    </span>
+                                </div>
+                                <input type="email" class="form-control" placeholder="Sign up for our newsletter">
+                                <div class="input-group-append">
+                                    <span class="input-group-text">GO</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- ./Footer -->
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <!-- <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/slick.min.js"></script>
+    <!-- Instagram Feed -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/4.2.1/masonry.pkgd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js"></script>
+    <script src="assets/js/masongram.min.js"></script>
+    <script src="assets/js/main.js"></script>
+
+
+</body>
+</html>
