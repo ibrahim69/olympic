@@ -1,11 +1,73 @@
-/* Navbar */
+/* ===============================
+
+    I. Index.html
+
+        Introduction
+        I. Navbar
+        II. Banner Home
+        III. Latest News
+        IV. Olympic Games
+        V. Ads
+        VI. Featured News
+        VII. Social Wall
+        VIII. Olympic  Channel
+        IX. Follow Us
+        X. Footer
+
+    II. Athletes.html
+================================ */
+
+
+/* Introduction */
+.w-70 {
+    width: 70% !important;
+}
+
 .w-49 {
     width: 49%;
+}
+
+.w-40 {
+    width: 40% !important;
 }
 
 .w-24 {
     width: 24%;
 }
+
+.flag-image {
+    margin: 3px 10px 0 0;
+    overflow: hidden;
+    position: relative;
+}
+
+.flag-image .flag18 {
+    width: 18px;
+    height: 12px;
+    background: url('../images/flag18x12sprite.webp') no-repeat top left;
+}
+
+.flag-image .flag18.gbr {
+    background-position: 0 -1078px;
+}
+
+.flag-image .flag18.can {
+    background-position: 0 -532px;
+}
+
+.flag-image .flag18.aut {
+    background-position: 0 -210px;
+}
+
+.flag-image .flag18.usa {
+    background-position: 0 -3192px;
+}
+
+.flag-image .flag18.fra {
+    background-position: 0 -1022px;
+}
+
+/* Navbar */
 
 .mega-header .header-top {
     margin: 20px auto;
@@ -830,7 +892,7 @@ hr.alt {
 }
 
 .footer .footer-bottom .container .row .footer-right .newsletter .form-control:focus {
-    border-color: transparent;
+    border-color: #ced4da;
     box-shadow: 0 0 0 0 transparent;
 }
 
@@ -845,4 +907,330 @@ hr.alt {
     justify-content: center;
     font-weight: bold;
     font-family: 'Roboto-condensed', sans-serif;
+    cursor: pointer;
+}
+
+/* Athletes.html */
+
+.athletes .masonry-slider .grid {
+    margin: 0  auto;
+}
+
+.athletes .masonry-slider .grid::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+/* .athletes .masonry-slider .grid-sizer {
+    width: 110px;
+} */
+
+.athletes .masonry-slider .grid-item {
+    position: relative;
+    width: 30%;
+}
+
+.athletes .masonry-slider .grid-item {
+    float: left;
+}
+
+.athletes .masonry-slider .grid-item a img {
+    width: 100%;
+    height: 320px;
+}
+
+.athletes .masonry-slider .grid-item a .caption {
+    display: none;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding: 15px 25px 15px;
+    background-color: rgba(0,0,0,.5);
+    color: #999;
+}
+
+.athletes .masonry-slider .grid-item a:hover .caption {
+    display: flex;
+}
+
+.athletes .masonry-slider .grid-item a .caption span {
+    margin-right: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300px;
+}
+
+.athletes .masonry-slider .grid-item a .caption strong.name {
+    float: left;
+    color: #fff;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: bold;
+}
+
+.athletes .masonry-slider .grid-item.col {
+    padding: 0;
+}
+
+.athletes .masonry-slider .grid-item.col .coloumn-2 {
+    position: relative;
+}
+
+.athletes .masonry-slider .grid-item.col .coloumn-2 img {
+    height: 160px;
+}
+
+/* Search Athletes */
+
+
+.athletes .search-athletes {
+    margin: 59px auto 70px;
+}
+
+.athletes .search-athletes .input-group {
+    padding: 5px 10px;
+    border: 1px solid #ddd;
+}
+
+.athletes .search-athletes .input-group-prepend .input-group-text {
+    background-color: transparent;
+    color: #ddd;
+    font-size: 13px;
+    transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    border: 0;
+}
+
+.athletes .search-athletes .form-control {
+    border: 0;
+    font-size: 13px;
+    padding-left: 0;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.athletes .search-athletes .form-control:focus {
+    border-color: #ced4da;
+    box-shadow: 0 0 0 0 transparent;
+}
+
+.athletes .search-athletes .input-group-append .input-group-text {
+    background-color: #ddd;
+    color: #fff;
+    width: 40px;
+    height: 44px;
+    font-size: 14px;
+    padding: 0;
+    text-align: center;
+    justify-content: center;
+    font-weight: bold;
+    font-family: 'Roboto-condensed', sans-serif;
+    border-radius: 0;
+    cursor: pointer;
+}
+
+/* List Athletes */
+
+.athletes .list-athletes .heading h2 {
+    color: #333;
+    text-transform: uppercase;
+    margin: 0;
+    font-size: 28px;
+    font-family: 'Roboto Condensed', sans-serif;
+    line-height: 30px;
+    font-weight: bold;
+}
+
+.athletes .list-athletes .table {
+    margin-bottom: 59px;
+}
+
+.athletes .list-athletes .table thead tr {
+    border-bottom: 1px solid #ddd;
+}
+
+.athletes .list-athletes .table thead tr th {
+    font-size: 13px;
+    line-height: 15px;
+    color: #999999;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    border: 0;
+    text-transform: uppercase;
+}
+
+.athletes .list-athletes .table tbody tr {
+    border-bottom: 1px solid #ddd;
+}
+
+.athletes .list-athletes .table tbody tr td {
+    border: 0;
+    vertical-align: middle;
+}
+
+.athletes .list-athletes .table tbody tr td a {
+    color: #333;
+    -webkit-transition: color .2s ease-out;
+    -moz-transition: color .2s ease-out;
+    -o-transition: color .2s ease-out;
+    transition: color .2s ease-out;
+    font-weight: bold;
+}
+
+.athletes .list-athletes .table tbody tr td a:hover {
+    text-decoration: none;
+    color: #0081c8;
+}
+
+.athletes .list-athletes .table tbody tr td:nth-child(2),
+.athletes .list-athletes .table tbody tr td:nth-child(3) {
+    width: 30%;
+}
+
+.athletes .list-athletes .table tbody tr td a {
+    font-size: 14px;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.athletes .list-athletes .table tbody tr td .coloumn-1 a .profile-row,
+.athletes .list-athletes .table tbody tr td .coloumn-2 a,
+.athletes .list-athletes .table tbody tr td .coloumn-4 .medal-area {
+    display: flex;
+}
+
+.athletes .list-athletes .table tbody tr td .coloumn-1 a {
+    font-weight: normal;
+}
+
+.athletes .list-athletes .table tbody tr td .coloumn-2 a img {
+    border-radius: 100%;
+    width: 45px;
+    margin-right: 10px;
+}
+
+.athletes .list-athletes .table tbody tr td .coloumn-2 a .name {
+    align-self: center;
+}
+
+.athletes .list-athletes .table tbody tr td .coloumn-2 a:hover .name {
+    text-decoration: underline;
+}
+
+.athletes .list-athletes .table tbody tr td .coloumn-4 .medal-area .medal,
+.athletes .list-athletes .table tbody tr td .coloumn-4 .medal-area .medal-silver,
+.athletes .list-athletes .table tbody tr td .coloumn-4 .medal-area .medal-bronze {
+    margin: 0 6px 10px;
+    color: #dab509;
+    font-size: 20px;
+}
+
+.athletes .list-athletes .table tbody tr td .coloumn-4 .medal-area .medal .num,
+.athletes .list-athletes .table tbody tr td .coloumn-4 .medal-area .medal-silver span.num,
+.athletes .list-athletes .table tbody tr td .coloumn-4 .medal-area .medal-bronze span.num {
+    border-radius: 30px;
+    padding: 3px 5px;
+    border: 2px solid #dab509;
+    text-align: center;
+    color: #dab509;
+    font-size: 16px;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.athletes .list-athletes .table tbody tr td .coloumn-4 .medal-area .medal-silver span {
+    color: #a1a1a1 !important;
+}
+
+.athletes .list-athletes .table tbody tr td .coloumn-4 .medal-area .medal-silver span.num {
+    padding: 4px 9px;
+    border-color: #a1a1a1;
+}
+
+.athletes .list-athletes .table tbody tr td .coloumn-4 .medal-area .medal-bronze span {
+    color: #ae7058 !important;
+}
+
+.athletes .list-athletes .table tbody tr td .coloumn-4 .medal-area .medal-bronze span.num {
+    padding: 4px 9px;
+    border-color: #ae7058;
+}
+
+/* Load More */
+
+.load-more {
+    text-align: center;
+    margin-bottom: 58px;
+}
+
+.load-more a {
+    display: inline-block;
+    vertical-align: top;
+    color: #959595;
+    border: 2px solid #959595;
+    padding: 7px 20px;
+    min-width: 110px;
+    text-decoration: none!important;
+    font-weight: 700;
+    line-height: 2em;
+}
+
+.load-more a:hover {
+    color: #494949;
+    border-color: #494949;
+}
+
+/* Featured Athletes */
+
+.featured-athletes {
+    padding: 69px 0 100px;
+}
+
+.featured-athletes .heading {
+    padding: 0 15px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 0 55px;
+}
+
+.featured-athletes .heading h2 {
+    color: #333333;
+    text-transform: uppercase;
+    margin: 0;
+    font-size: 25px;
+    font-weight: bold;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.featured-athletes .carousel-athletes a {
+    position: relative;
+    width: 250px !important;
+    margin: 0 10px;
+}
+
+.featured-athletes .carousel-athletes div {
+    position: relative;
+}
+
+.featured-athletes .carousel-athletes a .athlete-name {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: #000;
+    background: rgba(51,51,51,.5);
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 21px;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 700;
+    color: #fff;
+    padding: 22px 0 20px;
+    -webkit-transition: background .2s ease-out;
+    -moz-transition: background .2s ease-out;
+    -o-transition: background .2s ease-out;
+    transition: background .2s ease-out;
+}
+
+.featured-athletes .carousel-athletes a:hover .athlete-name {
+    background: rgba(51,51,51,.8) ;
 }

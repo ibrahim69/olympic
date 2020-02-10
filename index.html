@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="icon" type="image/png" href="assets/images/favicon-96x96.png" sizes="96x96">
 
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,600,700|Roboto+Condensed:300,400,700&amp;display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700|Roboto+Condensed:300,400,700&amp;display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/reset.css">
@@ -208,10 +208,10 @@
                                 </div>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Athlete</a>
+                                <a class="nav-link" href="athletes.html">Athlete</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Teams/Noc</a>
+                                <a class="nav-link" href="team.html">Teams/Noc</a>
                             </li>
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -881,16 +881,58 @@
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <!-- <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script> -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="assets/js/jquery.min.js"></script>
     <script src="assets/js/popper.min.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
     <script src="assets/js/slick.min.js"></script>
     <!-- Instagram Feed -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/4.2.1/masonry.pkgd.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js"></script>
+    <script src="assets/js/masonry.pkgd.min.js"></script>
+    <script src="assets/js/imagesloaded.pkgd.min.js"></script>
     <script src="assets/js/masongram.min.js"></script>
     <script src="assets/js/main.js"></script>
 
+    <!-- masongram Feed social Wall -->
+    <script>
+        // social-wall
 
+        $('.wrapper-social').masongram({
+            access_token: '2127248609.1677ed0.db0b4ad502bf43d3b915db9fadcfece0',
+            // endpoint
+            endpoint: 'users/self',
+
+            // infinite scroll
+            loop: true,
+
+            // the number of images to display
+            count: 15,
+
+            // distance (percent) from bottom of page where new API request is sent
+            offset: 1,
+
+            // image quality
+            size: 'low_resolution',
+
+            // HTML content of caption
+            // variables: {caption}, {location}, {likes}
+            caption: 
+                '<div class="text-center">' +
+                '<p data-if="{likes}"><i class="fa fa-heart text-danger"></i> {likes}</p>' +
+                '<p data-if="{caption}">{caption}</p>' +
+                '<a tabindex="-1" class="btn btn-primary" href="https://fruskac.net/en/map?c={location},12z" target="_blank" data-if="{location}"><i class="fa fa-map-o"></i> Location</a> ' +
+                '<a tabindex="-1" class="btn btn-primary" href="{link}" target="_blank" data-if="{link}"><i class="fa fa-instagram"></i> Instagram</a> ' +
+                // Optional FancyBox button
+                '<a tabindex="-1" class="btn btn-primary" data-fancybox href="{image}"><i class="fa fa-photo"></i> Fancybox</a>' +
+                '</div>',
+
+            // location information
+            // location: 'inherit&caption',
+        }).on('masongram:api:end', function () {
+            console.info('No more API items');
+        }).on('masongram:error', function () {
+            if (!access_token) {
+            $('#photos').after('<br><p class="text-center"><a class="btn btn-info btn-lg ' + authorization + '">Allow MasonGram to access your public photos</a></p>');
+            }
+        });
+    </script>
 </body>
 </html>
