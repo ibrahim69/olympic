@@ -18,7 +18,7 @@
     <link rel="stylesheet" href="assets/css/slick.css">
     <link rel="stylesheet" href="assets/css/slick-theme.css">
 
-    <title>Athlete</title>
+    <title>Team</title>
 </head>
 <body>
 
@@ -269,7 +269,7 @@
             </div>
 
             <!-- search team -->
-            <div class="search-athletes">
+            <div class="search-team">
                 <div class="container">
                     <div class="input-group mb-3">
                         <div class="input-group-prepend">
@@ -286,47 +286,175 @@
             <!-- Filter Countries -->
             <div class="filter-countries">
                 <div class="container">
-                    <div class="filter-button-group">
-                        <a href="#" class="button active" onclick="filterSelection('alphabetical')">ALPHABETICAL ORDER</a>
+                    <div class="filters-button-group">
+                        <a role="button" class="btn is-checked " data-filter=".alphabetical">ALPHABETICAL ORDER</a>
                         |
-                        <a href="#" class="button" onclick="filterSelection('protocol')">PROTOCOL ORDER</a>
+                        <a role="button" class="btn" data-filter=".protocol">PROTOCOL ORDER</a>
                     </div>
 
                     <div class="countries">
-                        <div class="box alphabetical">
-                            <a href="#">
-                                <div class="flag-image">
-                                    <div class="flag18 afg"></div>
-                                </div>
-                                Afghanistan
-                            </a>
-                        </div>
+                        <div class="row grid-row">
+                            <div class="box alphabetical" data-category="alphabetical">
+                                <a href="#">
+                                    <div class="flag-image">
+                                        <div class="flag90 afg"></div>
+                                    </div>
+                                    Afghanistan
+                                </a>
+                            </div>
+    
+                            <div class="box alphabetical protocol" data-category="protocol">
+                                <a href="#">
+                                    <div class="flag-image">
+                                        <div class="flag90 alb"></div>
+                                    </div>
+                                    Albania
+                                </a>
+                            </div>
+    
+                            <div class="box alphabetical" data-category="alphabetical">
+                                <a href="#">
+                                    <div class="flag-image">
+                                        <div class="flag90 alg"></div>
+                                    </div>
+                                    Algeria
+                                </a>
+                            </div>
+    
+                            <div class="box alphabetical protocol" data-category="protocol">
+                                <a href="#">
+                                    <div class="flag-image">
+                                        <div class="flag90 asa"></div>
+                                    </div>
+                                    American Samoa
+                                </a>
+                            </div>
+    
+                            <div class="box alphabetical" data-category="alphabetical">
+                                <a href="#">
+                                    <div class="flag-image">
+                                        <div class="flag90 and"></div>
+                                    </div>
+                                    Andorra
+                                </a>
+                            </div>
+    
+                            <div class="box alphabetical protocol" data-category="protocol">
+                                <a href="#">
+                                    <div class="flag-image">
+                                        <div class="flag90 ang"></div>
+                                    </div>
+                                    Angola
+                                </a>
+                            </div>
 
-                        <div class="box alphabetical protocol">
-                            <a href="#">
-                                <div class="flag-image">
-                                    <div class="flag18 alb"></div>
-                                </div>
-                                Albania
-                            </a>
-                        </div>
+                            <div class="box alphabetical" data-category="alphabetical">
+                                <a href="#">
+                                    <div class="flag-image">
+                                        <div class="flag90 ant"></div>
+                                    </div>
+                                    ANTIGUA AND BARBUDA
+                                </a>
+                            </div>
+    
+                            <div class="box alphabetical protocol" data-category="protocol">
+                                <a href="#">
+                                    <div class="flag-image">
+                                        <div class="flag90 arg"></div>
+                                    </div>
+                                    Argentina
+                                </a>
+                            </div>
+    
+                            <div class="box alphabetical protocol" data-category="protocol">
+                                <a href="#">
+                                    <div class="flag-image">
+                                        <div class="flag90 arm"></div>
+                                    </div>
+                                    Armenia
+                                </a>
+                            </div>
+    
+                            <div class="box alphabetical" data-category="alphabetical">
+                                <a href="#">
+                                    <div class="flag-image">
+                                        <div class="flag90 alg"></div>
+                                    </div>
+                                    Algeria
+                                </a>
+                            </div>
+    
+                            <div class="box alphabetical protocol" data-category="protocol">
+                                <a href="#">
+                                    <div class="flag-image">
+                                        <div class="flag90 alb"></div>
+                                    </div>
+                                    Albania
+                                </a>
+                            </div>
+    
+                            <div class="box alphabetical" data-category="alphabetical">
+                                <a href="#">
+                                    <div class="flag-image">
+                                        <div class="flag90 aru"></div>
+                                    </div>
+                                    Aruba
+                                </a>
+                            </div>
 
-                        <div class="box alphabetical">
-                            <a href="#">
-                                <div class="flag-image">
-                                    <div class="flag18 alg"></div>
-                                </div>
-                                Algeria
-                            </a>
-                        </div>
-
-                        <div class="box alphabetical protocol">
-                            <a href="#">
-                                <div class="flag-image">
-                                    <div class="flag18 asa"></div>
-                                </div>
-                                American Samoa
-                            </a>
+                            <div class="box alphabetical" data-category="alphabetical">
+                                <a href="#">
+                                    <div class="flag-image">
+                                        <div class="flag90 aus"></div>
+                                    </div>
+                                    Australia
+                                </a>
+                            </div>
+    
+                            <div class="box alphabetical protocol" data-category="protocol">
+                                <a href="#">
+                                    <div class="flag-image">
+                                        <div class="flag90 aut"></div>
+                                    </div>
+                                    Austria
+                                </a>
+                            </div>
+    
+                            <div class="box alphabetical protocol" data-category="protocol">
+                                <a href="#">
+                                    <div class="flag-image">
+                                        <div class="flag90 aze"></div>
+                                    </div>
+                                    Azerbaijan
+                                </a>
+                            </div>
+    
+                            <div class="box alphabetical" data-category="alphabetical">
+                                <a href="#">
+                                    <div class="flag-image">
+                                        <div class="flag90 bah"></div>
+                                    </div>
+                                    Bahamas
+                                </a>
+                            </div>
+    
+                            <div class="box alphabetical protocol" data-category="protocol">
+                                <a href="#">
+                                    <div class="flag-image">
+                                        <div class="flag90 brn"></div>
+                                    </div>
+                                    Bahrain
+                                </a>
+                            </div>
+    
+                            <div class="box alphabetical" data-category="alphabetical">
+                                <a href="#">
+                                    <div class="flag-image">
+                                        <div class="flag90 ban"></div>
+                                    </div>
+                                    Bangladesh
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -546,8 +674,28 @@
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/js/popper.min.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/isotope.pkgd.js"></script>
     
     <script src="assets/js/main.js"></script>
     
+    <script>
+        // external js: isotope.pkgd.js
+
+        // init Isotope
+        var $grid = $('.grid-row').isotope({
+            itemSelector: '.box',
+            layoutMode: 'fitRows'
+        });
+
+        $('.filters-button-group').on('click', 'a', function() {
+            var filterValue = $(this).attr('data-filter');
+            $grid.isotope({ filter: filterValue });
+        })
+
+        $('.filters-button-group .btn').on( 'click', function() {
+            $('.filters-button-group .btn').toggleClass('is-checked');
+        });
+
+    </script>
 </body>
 </html>

@@ -24,6 +24,8 @@
         VI. Related Posts
         VII. Red Banner
 
+    III. Team.html
+
 ================================ */
 
 
@@ -56,25 +58,45 @@
     background: url('../images/flag18x12sprite.webp') no-repeat top left;
 }
 
-.flag-image .flag18.gbr {
-    background-position: 0 -1078px;
+.flag-image .flag18.gbr { background-position: 0 -1078px; }
+
+.flag-image .flag18.can { background-position: 0 -532px; }
+
+.flag-image .flag18.aut { background-position: 0 -210px; }
+
+.flag-image .flag18.usa { background-position: 0 -3192px; }
+
+.flag-image .flag18.fra { background-position: 0 -1022px; }
+
+.flag-image .flag90 {
+    width: 90px;
+    height: 60px;
+    background: url('../images/flag90x60sprite.webp') no-repeat top left;
+    margin: 0 auto;
 }
 
-.flag-image .flag18.can {
-    background-position: 0 -532px;
-}
-
-.flag-image .flag18.aut {
-    background-position: 0 -210px;
-}
-
-.flag-image .flag18.usa {
-    background-position: 0 -3192px;
-}
-
-.flag-image .flag18.fra {
-    background-position: 0 -1022px;
-}
+.flag-image .flag90.afg{ background-position: 0 -62px;  }
+.flag-image .flag90.aho{ background-position: 0 -124px;  }
+.flag-image .flag90.ala{ background-position: 0 -186px;  }
+.flag-image .flag90.alb{ background-position: 0 -248px;  }
+.flag-image .flag90.alg{ background-position: 0 -310px;  }
+.flag-image .flag90.and{ background-position: 0 -372px;  }
+.flag-image .flag90.ang{ background-position: 0 -434px;  }
+.flag-image .flag90.ant{ background-position: 0 -496px;  }
+.flag-image .flag90.anz{ background-position: 0 -558px;  }
+.flag-image .flag90.arg{ background-position: 0 -620px;  }
+.flag-image .flag90.arm{ background-position: 0 -682px;  }
+.flag-image .flag90.aru{ background-position: 0 -744px;  }
+.flag-image .flag90.asa{ background-position: 0 -806px;  }
+.flag-image .flag90.aus{ background-position: 0 -868px;  }
+.flag-image .flag90.aut{ background-position: 0 -930px;  }
+.flag-image .flag90.aze{ background-position: 0 -992px;  }
+.flag-image .flag90.bah{ background-position: 0 -1054px;  }
+.flag-image .flag90.brn{ background-position: 0 -2046px; }
+.flag-image .flag90.ban{ background-position: 0 -1116px;  }
+.flag-image .flag90.bar{ background-position: 0 -1178px;  }
+.flag-image .flag90.bdi{ background-position: 0 -1240px;  }
+.flag-image .flag90.bel{ background-position: 0 -1302px;  }
 
 /* Navbar */
 
@@ -1334,4 +1356,198 @@ hr.alt {
 .athletes .banner.red-banner .container {
     padding-top: 0;
     padding-bottom: 0;
+}
+
+/* Team.html */
+
+/* Banner Box */
+.team .banner-box {
+    background: #333;
+    text-align: center;
+    margin: 0 0 60px;
+    position: relative;
+}
+
+.team .banner-box .container {
+    max-width: 1090px;
+    padding: 61px 15px 22px;
+    margin: 0 auto;
+    min-height: 180px;
+    position: relative;
+}
+
+.team .banner-box .container h1 {
+    color: #fff;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin: 0 0 33px;
+    font-size: 56px;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.team .banner-box .container .dropdown a.btn {
+    display: inline-block;
+    vertical-align: top;
+    text-decoration: none;
+    color: #ccc;
+    line-height: 1.143em;
+    font-weight: 700;
+    background: transparent;
+    border: 0;
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.team .banner-box .container .dropdown a.btn:active,
+.team .banner-box .container .dropdown a.btn:focus {
+    box-shadow: 0 0 0 0 transparent;
+}
+
+.team .banner-box .container .dropdown.show .dropdown-menu.show {
+    background: #fff;
+    border: 1px solid #d6d6d6;
+    border-radius: 6px;
+    box-shadow: 1px 5px 7px rgba(0,0,0,.3);
+    width: 320px;
+    position: absolute;
+    left: 50% !important;
+    margin: 0 0 0 -164px;
+    top: 28px !important;
+    z-index: 5;
+    font-weight: 400;
+    line-height: 1.75em;
+    text-align: left;
+    padding: 29px 25px 27px 33px;
+    color: #666;
+    border-color: #fff;
+    transform: none !important;
+}
+
+.team .banner-box .container .dropdown.show .dropdown-menu.show:before {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 0;
+    border-color: #fff;
+    bottom: 100%;
+    left: 50%;
+    margin-bottom: 0;
+    margin-left: -8px;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-bottom: 8px solid #fff;
+    border-bottom-color: inherit;
+}
+
+.team .banner-box .container .dropdown.show .dropdown-menu.show p {
+    font-size: 14px;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.team .banner-box .container .dropdown.show .dropdown-menu.show p a {
+    text-decoration: underline;
+    color: #000;
+}
+
+.team .banner-box .container .dropdown.show .dropdown-menu.show p a:hover {
+    color: #000;
+}
+
+/* Search Team */
+
+.team .search-team {
+    margin: 59px auto 70px;
+}
+
+.team .search-team .input-group {
+    padding: 5px 10px;
+    border: 1px solid #ddd;
+}
+
+.team .search-team .input-group-prepend .input-group-text {
+    background-color: transparent;
+    color: #ddd;
+    font-size: 13px;
+    transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    border: 0;
+}
+
+.team .search-team .input-group-prepend .input-group-text img {
+    width: 20px;
+    height: 20px;
+}
+
+.team .search-team .form-control {
+    border: 0;
+    font-size: 13px;
+    padding-left: 0;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.team .search-team .form-control:focus {
+    border-color: #ced4da;
+    box-shadow: 0 0 0 0 transparent;
+}
+
+/* Filter Countries */
+.team .filter-countries .filters-button-group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+    color: #ddd;
+    font-weight: 700;
+}
+
+.team .filter-countries .filters-button-group a {
+    color: #5c5c5c;
+    text-transform: uppercase;
+    margin: 0 5px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.team .filter-countries .filters-button-group a:hover {
+    text-decoration: none;
+    color: #5c5c5c;
+}
+
+.team .filter-countries .filters-button-group a.btn.is-checked {
+    color: #000;
+}
+
+.team .filter-countries .countries {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+.team .filter-countries .countries .box {
+    text-align: center;
+    margin: 0 0 30px;
+    width: 16.66%;
+    min-height: 120px;
+    padding: 0 18px;
+    height: 120px
+}
+
+.team .filter-countries .countries .box a {
+    color: #bababa;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.team .filter-countries .countries .box a:hover {
+    color: #777;
+}
+
+.team .filter-countries .countries .box .flag-image {
+    margin: 0 auto 32px;
 }
