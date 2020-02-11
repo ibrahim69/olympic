@@ -8,13 +8,22 @@
         III. Latest News
         IV. Olympic Games
         V. Ads
-        VI. Featured News
+        VI. Related Posts
         VII. Social Wall
         VIII. Olympic  Channel
         IX. Follow Us
         X. Footer
 
     II. Athletes.html
+
+        I. Masonry Slider
+        II. Search Athlete
+        III. List Athletes
+        IV. Featured Athletes
+        V. Blue Banner
+        VI. Related Posts
+        VII. Red Banner
+
 ================================ */
 
 
@@ -547,20 +556,20 @@ hr.alt {
     text-align: center;
 }
 
-/* Featured News */
+/* Related Posts */
 
-.featured-news {
+.related-posts {
     margin-bottom: 70px;
 }
 
-.featured-news .heading {
+.related-posts .heading {
     padding: 0 15px;
     display: flex;
     justify-content: space-between;
     margin: 0 0 55px;
 }
 
-.featured-news .heading h2 {
+.related-posts .heading h2 {
     color: #333333;
     text-transform: uppercase;
     margin: 0;
@@ -569,33 +578,33 @@ hr.alt {
     font-family: 'Roboto Condensed', sans-serif;
 }
 
-.featured-news .heading a.links {
+.related-posts .heading a.links {
     color: #acacac;
 }
 
-.featured-news .heading a.links:hover {
+.related-posts .heading a.links:hover {
     color: #606060;
     text-decoration: none;
 }
 
-.featured-news .box-area .row {
+.related-posts .box-area .row {
     justify-content: space-around;
 }
 
-.featured-news .box-area .row .box {
+.related-posts .box-area .row .box {
     width: 48%;
     position: relative;
 }
 
-.featured-news .box-area .row .box .image {
+.related-posts .box-area .row .box .image {
     margin: 0 0 23px;
 }
 
-.featured-news .box-area .row .box .image img {
+.related-posts .box-area .row .box .image img {
     width: 100%;
 }
 
-.featured-news .box-area .row .box .news-topic-label {
+.related-posts .box-area .row .box .news-topic-label {
     position: absolute;
     top: 0;
     right: 0;
@@ -607,15 +616,32 @@ hr.alt {
     padding: 6px 10px;
     margin: 0 0 23px;
     vertical-align: top;
+    font-weight: 700;
 }
 
-.featured-news .box-area .row .box .news-topic-label.innsburck1976,
-.featured-news .box-area .row .box .news-topic-label.innsburck1964,
-.featured-news .box-area .row .box .news-topic-label.tokyo2020 {
+.related-posts .box-area .row .box .news-topic-label.innsburck1976,
+.related-posts .box-area .row .box .news-topic-label.innsburck1964,
+.related-posts .box-area .row .box .news-topic-label.tokyo2020 {
     background-color: #ed1d24;
 }
 
-.featured-news .box-area .row .box h2 {
+.related-posts .box-area .row .box .news-topic-label.rio2016 {
+    background-color: #63b330 !important;
+}
+
+.related-posts .box-area .row .box .news-topic-label.athens2004 {
+    background-color: #007dc5 !important;
+}
+
+.related-posts .box-area .row .box .news-topic-label.stockholm1912 {
+    background-color: #eb9208 !important;
+}
+
+.related-posts .box-area .row .box .news-topic-label.paris1924 {
+    background-color: #c6a56f !important;
+}
+
+.related-posts .box-area .row .box h2 {
     margin: 0 0 9px;
     color: #333;
     text-transform: uppercase;
@@ -623,18 +649,18 @@ hr.alt {
     font-size: 15px;
 }
 
-.featured-news .box-area .row .box h2 a {
+.related-posts .box-area .row .box h2 a {
     color: #333;
-    font-size: 15px;
+    font-size: 19px;
     font-weight: bold;
 }
 
-.featured-news .box-area .row .box h2 a:hover {
+.related-posts .box-area .row .box h2 a:hover {
     text-decoration: none;
     color: #0081c8;
 }
 
-.featured-news .box-area .row .box span.time {
+.related-posts .box-area .row .box span.time {
     display: block;
     color: #999;
     line-height: 1.143em;
@@ -911,6 +937,14 @@ hr.alt {
 }
 
 /* Athletes.html */
+
+.athletes .masonry-slider {
+    margin-top: 20px;
+}
+
+.athletes .masonry-slider .container {
+    padding: 0;
+}
 
 .athletes .masonry-slider .grid {
     margin: 0  auto;
@@ -1233,4 +1267,71 @@ hr.alt {
 
 .featured-athletes .carousel-athletes a:hover .athlete-name {
     background: rgba(51,51,51,.8) ;
+}
+
+/* Blue Banner */
+.athletes .banner {
+    background: #acacac;
+    min-height: 500px;
+    margin-bottom: 76px;
+}
+
+.athletes .banner.blue-banner {
+    background-color: #0081c8 !important;
+}
+
+.athletes .banner .container {
+    padding: 104px 68px 28px 0;
+}
+
+.athletes .banner .container .row {
+    align-items: center;
+}
+
+.athletes .banner .container .row .caption-text h2 {
+    font-family: 'Roboto Condensed',sans-serif;
+    font-size: 50px;
+    font-weight: 700;
+    margin: 0 0 41px;
+    text-transform: uppercase;
+    color: #fff;
+    max-width: 570px;
+}
+
+.athletes .banner .container .row .caption-text a.cta-link {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(0,0,0,.1);
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 19px 24px 20px;
+    width: 360px;
+    font-family: 'Roboto Condensed',sans-serif;
+    font-weight: 700;
+    font-size: 17px;
+    position: relative;
+    margin: 0 0 76px;
+    -webkit-transition: background .2s ease-out;
+    -moz-transition: background .2s ease-out;
+    -o-transition: background .2s ease-out;
+    transition: background .2s ease-out;
+}
+
+.athletes .banner .container .row .caption-text a.cta-link:hover {
+    background: rgba(0,0,0,.3);
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Red Banner */
+.athletes .banner.red-banner {
+    background-color: #ed1941 !important;
+    margin-bottom: 0;
+}
+
+.athletes .banner.red-banner .container {
+    padding-top: 0;
+    padding-bottom: 0;
 }

@@ -76,20 +76,3 @@ for (var i = 0; i < btns.length; i++) {
 //     slides[slideIndex-1].style.display = "block";  
 //     dots[slideIndex-1].className += " active";
 // }
-
-//  Slick js (Carousel)
-$(".carousel").slick({
-    dots: true,
-    infinite: false,
-    slidesToShow: 3,
-    slidesToScroll: 3
-});
-
-
-//  Carousel List 2
-$(".carousel-list-2").slick({
-    dots: false,
-    infinite: false,
-    slidesToShow: 4,
-    slidesToScroll: 4
-});

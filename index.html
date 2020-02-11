@@ -447,6 +447,7 @@
                 </div>
             </div>
         </div>
+        <!-- ./Olympic Games -->
 
         <div class="ads">
             <img src="assets/images/ads.jpeg" alt="Ads Image">
@@ -454,7 +455,8 @@
 
         <hr class="alt clear">
 
-        <div class="featured-news">
+        <!-- Related Posts -->
+        <div class="related-posts">
             <div class="container">
                 <div class="heading">
                     <h2>Featured News</h2>
@@ -523,6 +525,7 @@
                 </div>
             </div>
         </div>
+        <!-- ./Related Posts -->
 
         <hr class="alt clear">
 
@@ -932,6 +935,25 @@
             if (!access_token) {
             $('#photos').after('<br><p class="text-center"><a class="btn btn-info btn-lg ' + authorization + '">Allow MasonGram to access your public photos</a></p>');
             }
+        });
+    </script>
+
+    <script>
+        //  Slick js (Carousel)
+        $(".carousel").slick({
+            dots: true,
+            infinite: false,
+            slidesToShow: 3,
+            slidesToScroll: 3
+        });
+
+
+        //  Carousel List 2
+        $(".carousel-list-2").slick({
+            dots: false,
+            infinite: false,
+            slidesToShow: 4,
+            slidesToScroll: 4
         });
     </script>
 </body>
