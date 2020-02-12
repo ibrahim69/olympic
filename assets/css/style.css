@@ -26,6 +26,20 @@
 
     III. Team.html
 
+        I. Banner Box
+        II. Search Team
+        III. Filter Countries
+
+    IV. Detail-Athlete.html
+        
+        I. Profile Athlete
+        II. id Athlete
+        III. Text Content
+        IV. Related Posts
+        V. Gallery Athlete
+        VI. Result
+        VII. Related Athlete
+
 ================================ */
 
 
@@ -1551,3 +1565,254 @@ hr.alt {
 .team .filter-countries .countries .box .flag-image {
     margin: 0 auto 32px;
 }
+
+/* Detail-Athlete.html */
+
+/* Profile Athlete */
+.detail-athlete .profile-athlete {
+    position: relative;
+    width: 100%;
+    padding: 125px 0 60px;
+    text-align: left;
+    overflow: hidden;
+}
+
+.detail-athlete .profile-athlete .bg-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../images/Ali_Muhammed_banner.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.detail-athlete .profile-athlete .container .profile-box {
+    background: #fff;
+    min-width: 300px;
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 20px 20px;
+    text-align: center;
+    border-radius: 1px;
+    padding: 28px 20px 20px;
+    line-height: 1.143em;
+    position: relative;
+}
+
+.detail-athlete .profile-athlete .container .profile-box .profile-image {
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 auto 22px;
+    text-align: center;
+    position: relative;
+}
+
+.detail-athlete .profile-athlete .container .profile-box .profile-image img {
+    vertical-align: middle;
+    border-radius: 178px;
+}
+
+.detail-athlete .profile-athlete .container .profile-box .text-box h1 {
+    font-weight: 700;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 40px;
+    letter-spacing: -2px;
+    color: #333;
+    margin: 0 0 12px;
+    text-transform: uppercase;
+}
+
+.detail-athlete .profile-athlete .container .profile-box .text-box .profile-row {
+    display: flex;
+    justify-content: center;
+    vertical-align: middle;
+    margin-bottom: 20px;
+}
+
+.detail-athlete .profile-athlete .container .profile-box .text-box .profile-row .flag-image {
+    margin-top: 2px;
+}
+
+.detail-athlete .profile-athlete .container .profile-box .text-box .medal-box {
+    margin: 0 0 6px;
+    padding: 0;
+    overflow: hidden;
+    font: 1.336em/1.07em 'Roboto Condensed',Arial,Helvetica,sans-serif;
+    color: #dab509;
+    display: flex;
+    justify-content: center;
+}
+
+.detail-athlete .profile-athlete .container .profile-box .text-box .medal-box div {
+    align-items: center;
+    margin: 0 9px 10px;
+    display: flex;
+}
+
+.detail-athlete .profile-athlete .container .profile-box .text-box .medal-box div span.num {
+    display: inline-block;
+    vertical-align: middle;
+    border-radius: 30px;
+    width: 30px;
+    height: 30px;
+    padding: 3px 0 0;
+    border: 2px solid #dab509;
+    text-align: center;
+    color: #dab509;
+    margin-left: 7px;
+}
+
+.detail-athlete .profile-athlete .container .profile-box .text-box .medal-box div.medal-silver span {
+    color: #a1a1a1;
+    border-color: #a1a1a1;
+}
+
+.detail-athlete .profile-athlete .container .profile-box .text-box .medal-box div.medal-bronze span {
+    color: #ae7058;
+    border-color: #ae7058;
+}
+
+
+/* id Athlete */
+
+.detail-athlete .id-athlete {
+    background: #666;
+    width: 100%;
+    font: 700 1.5em/1.07em 'Roboto Condensed',Arial,Helvetica,sans-serif;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 35px 0 37px;
+    margin: 0 0 60px;
+}
+
+.detail-athlete .id-athlete.usa {
+    background-color: #b22234;
+}
+
+.detail-athlete .id-athlete .bio {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    position: relative;
+}
+
+.detail-athlete .id-athlete .bio > div {
+    position: relative; 
+    padding: 10px 40px;
+}
+
+.detail-athlete .id-athlete .bio::before,
+.detail-athlete .id-athlete .bio > div::before {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 1px;
+    height: 70px;
+    background: #fff;
+    background: rgba(255,255,255,.3);
+}
+
+.detail-athlete .id-athlete .bio > div::before {
+    right: auto;
+    left: 0;
+}
+
+.detail-athlete .id-athlete .bio .text-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-transform: uppercase;
+    align-items: center;
+}
+
+.detail-athlete .id-athlete .bio .text-box strong {
+    font-size: .857em;
+    line-height: 1.07em;
+    color: #fff;
+    color: rgba(255,255,255,.4);
+    display: block;
+    font-weight: 400;
+    margin: 0 0 6px;
+}
+
+.detail-athlete .id-athlete .bio .text-box a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Text Content */
+.detail-athlete .text-content {
+    max-width: 730px;
+    margin: 0 auto 55px;
+    padding: 0 15px;
+    text-align: center;
+}
+
+.detail-athlete .text-content p {
+    font-size: 14px;
+    color: #222222;
+    font-weight: 400;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.5;
+    margin-bottom: 2em;
+    text-align: left;
+}
+
+.detail-athlete .text-content h5 {
+    font-size: 21px;
+    font-family: 'Roboto Condensed', sans-serif;
+    color: #222222;
+    font-weight: 700;
+    margin-bottom: .75em;
+    text-align: left;
+}
+
+.detail-athlete .text-content .extra-content {
+    display: none;
+}
+
+.detail-athlete .text-content .load-more {
+    text-align: center;
+    margin: 18px 0 0;
+}
+
+.detail-athlete .text-content .load-more a {
+    display: inline-block;
+    vertical-align: top;
+    color: #959595;
+    border: 2px solid #959595;
+    padding: 7px 20px;
+    min-width: 110px;
+    text-decoration: none!important;
+    font-weight: 700;
+    line-height: 2em;
+    text-decoration: none;
+}
+
+.detail-athlete .text-content .load-more a:hover {
+    color: #494949;
+    border-color: #494949;
+}
+
+
+/* Related Posts */
+.detail-athlete .related-posts .box-area .row .box {
+    width: 33%;
+}
+
+
+/* Gallery Athlete */
+
+
+
+/* Result */
+
+
+
+/* Related Athlete */
+
+
