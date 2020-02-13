@@ -6,14 +6,16 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Light Gallery</title>
 
-    <link rel="stylesheet" href="../../snippet/lightGallery/dist/css/lightgallery.min.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/lightgallery.min.css">
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-    <script src="https://f.vimeocdn.com/js/froogaloop2.min.js"></script>
-    <script src="../../snippet/lightGallery/dist/js/lightgallery.min.js"></script>
-    <script src="../../snippet/lightGallery/modules/lg-thumbnail.min.js"></script>
-    <script src="../../snippet/lightGallery/modules/lg-video.min.js"></script>
-    <script src="../../snippet/lightGallery/modules/lg-fullscreen.min.js"></script>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/lightgallery.min.js"></script>
+    <script src="assets/js/lg-thumbnail.min.js"></script>
+    <script src="assets/js/lg-video.min.js"></script>
+    <script src="assets/js/lg-fullscreen.min.js"></script>
     
     <style type="text/css">
         body{
@@ -136,41 +138,48 @@
     </style>
 
 </head>
-<body class="home">
+<body>
 
     <div class="demo-gallery">
         <ul id="lightgallery" class="list-unstyled row">
-            <li class="col-xs-6 col-sm-4 col-md-3" data-src="https://www.youtube.com/watch?v=AgRz_l8ZUcQ" data-sub-html="<h4>Fading Light</h4><p>Classic view from Rigwood Jetty on Coniston Water an old archive shot similar to an old post but a little later on.</p>">
+            <li class="col-xs-6 col-sm-4 col-md-3" 
+              data-src="https://www.youtube.com/watch?v=AgRz_l8ZUcQ" 
+              data-sub-html="
+                  <h4>MUHAMMAD ALI RECEIVES LOST GOLD MEDAL</h4>
+                  <p>Muhammad Ali receives a replacement for the gold medal he won in boxing in the 1960 Olympics.</p>
+                  <img src='assets/images/ads.jpeg'">
                 <a href="">
-                    <img class="img-responsive" src="http://sachinchoolur.github.io/lightGallery/static/img/thumb-v-y-2.jpg">
+                    <img class="img-responsive" src="assets/images/moh-ali-gal-1.jpeg">
                     <div class="demo-gallery-poster">
                         <img src="assets/images/video-play.png">
                     </div>
                 </a>
             </li>
-            <li class="col-xs-6 col-sm-4 col-md-3" data-src="assets/images/moh-ali-gal-2.jpeg" data-sub-html="<h4>Bowness Bay</h4><p>A beautiful Sunrise this morning taken En-route to Keswick not one as planned but I'm extremely happy I was passing the right place at the right time....</p>">
+            <li class="col-xs-6 col-sm-4 col-md-3" 
+              data-src="assets/images/moh-ali-gal-2.jpeg"
+              data-title=""
+              data-sub-html="
+                  <h4>OPENING CEREMONY ATLANTA 1996</h4>
+                  <p>Muhammad Ali, holding the torch, prepares to light the cauldron of the Atlanta 1996 Olympic Games</p>
+                  <p>©Getty Michael Cooper</p>
+                  <a href='#'>ATLANTA 1996</a>,
+                  <a href='#'>CLAY, CASSIUS</a>">
                 <a href="">
                     <img class="img-responsive" src="assets/images/moh-ali-gal-2.jpeg">
-                </a>
-            </li>
-            <li class="col-xs-6 col-sm-4 col-md-3" data-src="assets/images/moh-ali-gal-3.jpeg" data-sub-html="<h4>Bowness Bay</h4><p>A beautiful Sunrise this morning taken En-route to Keswick not one as planned but I'm extremely happy I was passing the right place at the right time....</p>">
-                <a href="">
-                    <img class="img-responsive" src="assets/images/moh-ali-gal-3.jpeg">
-                </a>
-            </li>
-            <li class="col-xs-6 col-sm-4 col-md-3" data-src="assets/images/moh-ali-gal-4.jpeg" data-sub-html="<h4>Bowness Bay</h4><p>A beautiful Sunrise this morning taken En-route to Keswick not one as planned but I'm extremely happy I was passing the right place at the right time....</p>">
-                <a href="">
-                    <img class="img-responsive" src="assets/images/moh-ali-gal-4.jpeg">
                 </a>
             </li>
         </ul>
     </div>
 
-    <script type="text/javascript">
+  <script type="text/javascript">
         $(document).ready(function(){
-            $('#lightgallery').lightGallery();
+            $('#lightgallery').lightGallery({
+              fullScreen : false,
+              download : false,
+              thumbnail : false
+            });
         });
-    </script>
+  </script>
     
 </body>
 </html>

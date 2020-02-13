@@ -1,0 +1,192 @@
+@media only screen and (max-width: 960px)  {
+    .mega-header .header-top.mobile-phone {
+        padding: 20px 0 0;
+        margin: 0 auto;
+    }
+
+    .mega-header .header-top.mobile-phone.scrollUp {
+        width: 100%;
+        position: fixed;
+        top: 0;
+        z-index: 3;
+        background-color: #fff;
+        margin: 0 auto;
+        box-shadow: 1px 2px 2px #ddd;
+    }
+
+    .mega-header .header-main .container .row .collapse {
+        display: none;
+    }
+
+    .mega-header .header-main.scrollUp {
+        background-color: transparent;
+        box-shadow: 0 0 0 transparent;
+        z-index: 2;
+    }
+
+    .mega-header .header-main.scrollUp .navbar-collapse {
+        display: none;
+    }
+
+    .mega-header .search-box.display-on {
+        top: 97px;
+    }
+
+    .mega-header .header-main.scrollUp .search-box.display-on {
+        top: 87px;
+    }
+
+    .mobile-hide {
+        display: none;
+    }
+
+    .mobile-show {
+        display: block;
+    }
+
+    .header-mobile {
+        display: block;
+        position: fixed;
+        width: 100%;
+        background: #fff;
+        z-index: 2;
+        top: 67px;
+    }
+
+    .latest-news .carousel .slick-list .slick-track {
+        margin: 0 auto;
+    }
+
+    .latest-news .carousel div article img {
+        width: 100%;
+    }
+
+    .latest-news .carousel div article .news-topic-label {
+        right: 0;
+        font-size: 14px;
+    }
+
+    .slick-prev {
+        left: 0;
+        z-index: 1;
+    }
+
+    .slick-next {
+        right: 0;
+    }
+
+    .slick-next, .slick-prev {
+        top: 37%;
+    }
+
+    .olympic-games .carousel-list-2 .slick-arrow {
+        top: 30%;
+        bottom: auto;
+    }
+
+    .related-posts .box-area .row .box .news-topic-label {
+        font-size: 12px;
+    }
+
+    .olympic-channel .container {
+        max-width: 720px;
+    }
+
+    .olympic-channel .heading a.links {
+        font-size: 13px;
+        width: 200px;
+        text-align: center;
+    }
+
+    .olympic-channel .cards-area .row .card .card-body h5 {
+        font-size: 15px;
+    }
+
+    .olympic-channel .cards-area .row .card .card-body h5 a {
+        font-size: 12px;
+    }
+
+    .footer .footer-top .row div p {
+        font-size: 14px;
+    }
+
+    .footer .footer-top .row div ul li a {
+        font-size: 10px;
+    }
+}
+
+@media only screen and (max-width: 768px)  {
+
+    .olympic-channel .container {
+        max-width: 540px;
+    }
+
+    .olympic-channel .cards-area .row {
+        margin: 0 auto !important;
+    }
+
+    .olympic-channel .cards-area .row .card {
+        width: 100%;
+        margin-bottom: 25px;
+    }
+}
+
+@media only screen and (max-width: 425px)  {
+
+    .related-posts .box-area .row {
+        margin: 0 auto !important;
+    }
+
+    .related-posts .box-area .row .box {
+        width: 100%;
+        margin-bottom: 25px;
+    }
+
+    .follow-us .container .box-area .box {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .follow-us .container .box-area .box a {
+        height: 45px;
+    }
+
+    .follow-us .container .box-area .box a i {
+        top: 3px;
+    }
+
+    .follow-us .container .box-area .box a p {
+        display: none;
+        bottom: 9px;
+        margin-bottom: 0;
+    }
+
+    .follow-us .container .box-area .box a p.mobile-sm {
+        display: block;
+    }
+
+    .footer .footer-top {
+        display: none;
+    }
+
+    .footer .footer-mobile-sm {
+        display: block;
+    }
+
+    .footer .footer-bottom .container .row {
+        flex-direction: column-reverse;
+    }
+
+    .footer .footer-bottom .container .row .footer-left {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer .footer-bottom .container .row .footer-left .logo-footer {
+        margin-bottom: 40px;
+    }
+
+    .footer .footer-bottom .container .row .footer-right {
+        margin-bottom: 40px;
+    }
+}

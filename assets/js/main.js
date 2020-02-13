@@ -1,3 +1,44 @@
+// check window for mobile phone
+var $window = $(window);
+
+function checkWidth() {
+    var windowsize = $window.width();
+    if (windowsize <= 960) {
+        $('.header-top.navbar-light').addClass('mobile-phone');
+    } else {
+        $('.header-top.navbar-light').removeClass('mobile-phone');
+    }
+}
+// Execute on load
+checkWidth();
+// Bind event listener
+$(window).resize(checkWidth);
+
+
+// Hide Navbar When Scroll Down
+var c, currentScrollTop = 0, navbar = $('.header-main'),  navbar_mobile = $('.mobile-phone');
+
+$(window).scroll(function () {
+    var a = $(window).scrollTop();
+    var b = navbar.height();
+    
+    currentScrollTop = a;
+    
+    if (c < currentScrollTop && a > b + b) {
+        navbar.removeClass("scrollUp");
+        navbar_mobile.removeClass("scrollUp");
+    } else if (c > currentScrollTop && !(a <= b)) {
+        navbar.addClass("scrollUp");
+        navbar_mobile.addClass("scrollUp");
+    } else {
+        navbar.removeClass("scrollUp");
+        navbar_mobile.removeClass("scrollUp");
+    }
+    c = currentScrollTop;
+});
+
+// $('.mobile-phone').sticky({topSpacing: 0});
+
 //drop down menu	
 $(".drop-down").hover(function() {
     $('.mega-menu').addClass('display-on');
@@ -5,6 +46,15 @@ $(".drop-down").hover(function() {
 $(".drop-down").mouseleave(function() {
     $('.mega-menu').removeClass('display-on');
 });
+
+// Search Header
+$('.header-main .search').on('click', function() {
+    $('.search-box').toggleClass('display-on');
+})
+
+$('.header-top.mobile-phone .search').on('click', function() {
+    $('.search-box').toggleClass('display-on');
+})
 
 // Filtering button in Nav Dropdown
 filterSelection("all")
