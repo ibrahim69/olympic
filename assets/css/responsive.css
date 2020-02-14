@@ -1,3 +1,10 @@
+@media only screen and (max-width: 1024px) {
+    .athletes .banner .container .row .caption-text h2 {
+        max-width: 400px;
+        font-size: 40px;
+    }
+}
+
 @media only screen and (max-width: 960px)  {
     .mega-header .header-top.mobile-phone {
         padding: 20px 0 0;
@@ -129,6 +136,25 @@
         width: 100%;
         margin-bottom: 25px;
     }
+
+    .athletes .list-athletes .table tbody tr td .coloumn-4 .medal-area div span:first-child {
+        display: none;
+    }
+
+    .athletes .banner .container,
+    .athletes .banner.red-banner .container {
+        padding: 85px 68px 28px;
+        text-align: center;
+    }
+
+    .athletes .banner .container .row .caption-text a.cta-link,
+    .athletes .banner .container .caption-text {
+        margin: 0 auto;
+    }
+
+    .athletes .banner .container img {
+        display: none;
+    }
 }
 
 @media only screen and (max-width: 425px)  {
@@ -188,5 +214,14 @@
 
     .footer .footer-bottom .container .row .footer-right {
         margin-bottom: 40px;
+    }
+
+    .athletes .masonry-slider .grid:not(:first-child) {
+        display: none;
+    }
+
+    .athletes .masonry-slider .grid .grid-item {
+        width: 100% !important;
+        float: none;
     }
 }
