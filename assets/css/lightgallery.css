@@ -1001,3 +1001,23 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 }
 
 /*# sourceMappingURL=lightgallery.css.map */
+
+@media only screen and (max-width: 1024px) {
+  .lg-outer .lg {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .lg-outer .lg-inner {
+    width: 100%;
+    position: relative;
+    margin: 20px auto;
+    overflow: hidden;
+  }
+
+  .lg-sub-html {
+    position: relative;
+    width: 100%;
+    padding: 40px 40px;
+  }
+}

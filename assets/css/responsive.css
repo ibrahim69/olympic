@@ -1,15 +1,74 @@
 @media only screen and (max-width: 1024px) {
+
+    .mega-header .header-top.mobile-phone {
+        padding: 16px 0;
+        margin: 0 auto;
+    }
+
+    .header-top .navbar-brand img {
+        width: 72px;
+        height: auto;
+    }
+
+    .header-top .search-mobile img {
+        width: 23px;
+        height: 25px;
+    }
+
+    .navbar-light .navbar-toggler {
+        border-color: transparent;
+    }
+
+    .mega-header .header-main .search-box {
+        top: 123px;
+    }
+
     .athletes .banner .container .row .caption-text h2 {
         max-width: 400px;
         font-size: 40px;
     }
+
+    .banner-box .container h1 {
+        font-size: 41px;
+    }
+
+    .lightbox .gallery-area .lightgallery li {
+        width: 48%;
+    }
+
+    .detail-team .about .id-card-box .items-active .item-list > div {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .detail-team .about .id-card-box .items-active .item-list .row {
+        width: 50%;
+        border-top: 0;
+        align-items: baseline;
+    }
+
+    .detail-team .about .id-card-box .items-active .item-list .row:first-child .txt {
+        width: 70%;
+    }
+
+    .detail-team .about .id-card-box .items-active .item-list .row:nth-child(odd) {
+        border-right: 1px solid #ddd;
+    }
+
+    .detail-team .about .id-card-box .items-active .item-list .row:nth-child(even) {
+        padding-left: 30px;
+    }
+
+    .detail-team .about .id-card-box .items-active .item-list .row:nth-child(11) {
+        align-items: end;
+    }
+
+    .detail-team .about .id-card-box .items-active .item-list .row .txt .profile-row span {
+        margin: 0;
+    }
 }
 
 @media only screen and (max-width: 960px)  {
-    .mega-header .header-top.mobile-phone {
-        padding: 20px 0 0;
-        margin: 0 auto;
-    }
 
     .mega-header .header-top.mobile-phone.scrollUp {
         width: 100%;
@@ -36,11 +95,11 @@
     }
 
     .mega-header .search-box.display-on {
-        top: 97px;
+        top: 75px;
     }
 
     .mega-header .header-main.scrollUp .search-box.display-on {
-        top: 87px;
+        top: 78px;
     }
 
     .mobile-hide {
@@ -120,6 +179,41 @@
     .footer .footer-top .row div ul li a {
         font-size: 10px;
     }
+
+    .athletes .banner .container,
+    .athletes .banner.red-banner .container {
+        padding: 85px 68px 28px;
+        text-align: center;
+    }
+
+    .athletes .banner .container .row .caption-text a.cta-link,
+    .athletes .banner .container .caption-text {
+        margin: 0 auto;
+    }
+
+    .athletes .banner .container img {
+        display: none;
+    }
+
+    .result .table .col3 {
+        width: 30%;
+    }
+
+    .result .table .col4 {
+        width: auto;
+    }
+
+    .detail-team .add-text-section .container .wrapper-section a {
+        width: 40%;
+    }
+
+    .detail-team .add-text-section .container .wrapper-section .text-box {
+        width: 52%;
+    }
+
+    .detail-team .add-text-section .container .wrapper-section .text-box p {
+        font-size: 14px;
+    }
 }
 
 @media only screen and (max-width: 768px)  {
@@ -137,27 +231,129 @@
         margin-bottom: 25px;
     }
 
-    .athletes .list-athletes .table tbody tr td .coloumn-4 .medal-area div span:first-child {
-        display: none;
+    .team .filter-countries .countries .box {
+        width: 25%;
+    }
+
+    .detail-team .about .id-card-box .items-active .item-list .row:nth-child(even) {
+        padding-left: 0;
+    }
+
+    .detail-team .about .id-card-box .items-active .item-list .row {
+        display: flex;
+        width: 100%;
+        border-top: 1px solid #ddd;
+        border-right: 0;
+        padding: 15px 0 17px;
+        font-size: 11.7px;
+    }
+
+    .detail-team .about .id-card-box .items-active .item-list .row:nth-child(odd) {
+        border-right: 0;
+    }
+
+    .detail-team .about .id-card-box .items-active .item-list .list-wrapper .row .txt {
+        width: 63%;
+    }
+
+    .detail-athlete .profile-athlete {
+        padding: 0;
+        height: 500px;
+    }
+
+    .detail-athlete .profile-athlete .bg-image img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .detail-athlete .profile-athlete .container {
+        position: absolute;
+        bottom: 0;
+        padding: 0;
+        max-width: 100%;
+    }
+
+    .detail-athlete .profile-athlete .container .profile-box {
+        display: flex;
+        padding: 30px 40px 20px;
+        margin: 0;
+    }
+
+    .detail-athlete .profile-athlete .container .profile-box .profile-image {
+        margin: 0 25px 0 0;
+    }
+
+    .detail-athlete .profile-athlete .container .profile-box .profile-image img {
+        width: 90px;
+    }
+
+    .detail-athlete .profile-athlete .container .profile-box .text-box .profile-row,
+    .detail-athlete .profile-athlete .container .profile-box .text-box .medal-box {
+        justify-content: end;
+    }
+
+    .detail-athlete .profile-athlete .container .profile-box .text-box .medal-box .medal:first-child {
+        margin-left: 0;
+    }
+
+    .detail-athlete .id-athlete .bio::before,
+    .detail-athlete .id-athlete .bio > div::before {
+        content: none;
+    }
+
+    .detail-athlete .id-athlete .bio > div {
+        width: 47%;
+        padding: 0;
+    }
+
+    .detail-athlete .id-athlete .bio .text-box strong {
+        display: inline;
+        font-size: 18px;
+        margin: 0 33px 0 0;
+    }
+
+    .detail-athlete .id-athlete .bio .text-box a,
+    .detail-athlete .id-athlete .bio .text-box p {
+        font-size: 18px;
+        margin: 0 auto;
+    }
+
+
+    .detail-athlete .id-athlete .bio .text-box {
+        flex-direction: row;
+        justify-content: end;
+        text-transform: uppercase;
+        align-items: baseline;
+        padding: 0 0 17px;
+        border-bottom: 1px solid rgba(255,255,255,.3);
+    }
+
+}
+
+@media only screen and (max-width: 767px)  {
+
+    .mega-header .header-main.scrollUp .search-box.display-on {
+        top: 76px;
+    }
+    
+    .athletes .banner {
+        min-height: 250px;
+    }
+
+    .athletes .banner .container .row {
+        margin: 0 auto;
     }
 
     .athletes .banner .container,
     .athletes .banner.red-banner .container {
-        padding: 85px 68px 28px;
-        text-align: center;
+        padding: 67px 0 28px;
     }
 
-    .athletes .banner .container .row .caption-text a.cta-link,
-    .athletes .banner .container .caption-text {
-        margin: 0 auto;
+    .athletes .banner .container .row .caption-text h2 {
+        font-size: 28px;
     }
-
-    .athletes .banner .container img {
-        display: none;
-    }
-}
-
-@media only screen and (max-width: 425px)  {
 
     .related-posts .box-area .row {
         margin: 0 auto !important;
@@ -216,12 +412,137 @@
         margin-bottom: 40px;
     }
 
-    .athletes .masonry-slider .grid:not(:first-child) {
+    .result .table .table-heading {
         display: none;
     }
 
-    .athletes .masonry-slider .grid .grid-item {
-        width: 100% !important;
-        float: none;
+    .result .table .list-result .list {
+        flex-direction: column;
+        border-bottom: 0;
+    }
+
+    .result .table .list-result .list .col1 {
+        display: none;
+    }
+
+    .result .table .list-result .list > div {
+        width: 100%;
+        border-top: 1px solid #ddd;
+    }
+
+    .result .table .list-result .list .col3,
+    .result .table .list-result .list .col4 {
+        padding-left: 60px;
+        text-transform: uppercase;
+    }
+
+    .result .table .list-result .list .col2 a {
+        display: flex;
+    }
+
+    .result .table .list-result .list .col2 img {
+        height: 45px;
+    }
+
+    .result .table .list-result .list .col2 .area .profile-row {
+        display: flex;
+    }
+
+    .team .filter-countries .countries .box {
+        width: 50%;
+        margin: 0 auto 9px;
+    }
+
+    .banner-box .container h1 {
+        font-size: 28px;
+    }
+
+    .detail-team .add-text-section .container .wrapper-section a {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 20px
+    }
+
+    .detail-team .add-text-section .container .wrapper-section .text-box {
+        width: 100%;
+    }
+
+    .lightbox .gallery-area .lightgallery li {
+        width: 100%;
+        margin: 0 auto 20px;
+    }
+
+    .lightbox .gallery-area .lightgallery li:nth-child(odd) {
+        margin-right: 0;
+    }
+
+    .detail-team .about .id-card-box {
+        border-right: 0;
+        border-left: 0;
+    }
+
+    .detail-team .result .table .list-result .list .col1 {
+        display: block;
+    }
+
+    .detail-team .result .table .list-result .list .col1 a {
+        font-weight: 700;
+    }
+
+    .detail-team .result .table .list-result .list .col2 {
+        padding-left: 60px;
+    }
+
+    .detail-team .result .table .list-result .list .medal-area {
+        justify-content: end;
+    }
+
+    .detail-athlete .profile-athlete {
+        height: auto;
+    }
+
+    .detail-athlete .profile-athlete .bg-image {
+        display: none;
+    }
+
+    .detail-athlete .profile-athlete .container {
+        position: relative;
+    }
+
+    .detail-athlete .profile-athlete .container .profile-box {
+        display: block;
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    .detail-athlete .profile-athlete .container .profile-box .profile-image {
+        margin: 0 auto;
+    }
+
+    .detail-athlete .profile-athlete .container .profile-box .profile-image img {
+        width: 140px;
+    }
+
+    .detail-athlete .profile-athlete .container .profile-box .text-box {
+        padding-top: 9px;
+    }
+
+    .detail-athlete .profile-athlete .container .profile-box .text-box h1 {
+        font-size: 28px;
+    }
+
+    .detail-athlete .profile-athlete .container .profile-box .text-box .profile-row,
+    .detail-athlete .profile-athlete .container .profile-box .text-box .medal-box {
+        justify-content: center;
+    }
+
+    .detail-athlete .id-athlete {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    .detail-team .about .id-card-box .items-active .item-list .list-wrapper .row .txt {
+        width: 50%;
     }
 }
