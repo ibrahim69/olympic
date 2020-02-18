@@ -172,6 +172,10 @@
         font-size: 12px;
     }
 
+    .footer {
+        margin-top: 20px;
+    }
+
     .footer .footer-top .row div p {
         font-size: 14px;
     }
@@ -213,6 +217,68 @@
 
     .detail-team .add-text-section .container .wrapper-section .text-box p {
         font-size: 14px;
+    }
+
+    .detail-news .top-title h1 {
+        font-size: 35px;
+    }
+
+    .detail-news .post-wrapper {
+        padding: 3px 0 17px;
+    }
+
+    .detail-news .post-wrapper .info-col {
+        position: relative;
+        width: 100%;
+    }
+
+    .detail-news .post-wrapper .info-col::before {
+        content: none;
+    }
+
+    .detail-news .post-wrapper .info-col dl dt,
+    .detail-news .post-wrapper .info-col dl dd {
+        display: inline;
+        font-size: 13px;
+        margin-right: 10px;
+    }
+
+    .detail-news .post-wrapper .social-col {
+        position: static;
+        width: auto;
+        overflow: hidden;
+        margin: 0px 0 26px;
+    }
+
+    .detail-news .post-wrapper .social-col li {
+        float: left;
+        min-width: 95px;
+        margin: 0 15px 10px 0;
+    }
+
+    .detail-news .post-wrapper .info-col dl dt:nth-child(3),
+    .detail-news .post-wrapper .info-col dl dd:last-child {
+        display: none;
+    }
+
+    .detail-news .post-wrapper .post-box h5 {
+        font-size: 19px;
+    }
+
+    .detail-news .post-wrapper .post-box p {
+        font-size: 15px;
+        line-height: 2;
+    }
+
+    .detail-news .related-posts .box-area .row .box {
+        width: 48%;
+        margin-right: 2%;
+    }
+
+    .detail-news .search {
+        float: none;
+        width: 100%;
+        margin-bottom: 30px;
     }
 }
 
@@ -328,6 +394,15 @@
         align-items: baseline;
         padding: 0 0 17px;
         border-bottom: 1px solid rgba(255,255,255,.3);
+    }
+
+    .related-posts .box-area .row {
+        justify-content: end;
+    }
+
+    .detail-athlete .related-posts .box-area .row .box {
+        width: 47%;
+        margin: 0 15px 15px 0;
     }
 
 }
@@ -538,6 +613,90 @@
 
     .detail-athlete .id-athlete {
         display: none;
+    }
+
+    .detail-athlete .related-posts .box-area .row .box {
+        width: 100%;
+        margin: 0 0 15px 0;
+    }
+
+    .detail-athlete .result .list-result .list .col1 {
+        display: block;
+    }
+
+    .detail-athlete .result .list-result .list .area {
+        display: unset;
+    }
+
+    .detail-athlete .result .table .list-result .list .col2,
+    .detail-athlete .result .table .list-result .list .col3 {
+        float: left;
+    }
+
+    .detail-athlete .result .table .list-result .list .col2 {
+        width: 20%;
+    }
+
+    .detail-athlete .result .table .list-result .list .col3 {
+        width: 80%;
+    }
+
+    .detail-athlete .result .table .list-result .list .col3,
+    .detail-athlete .result .table .list-result .list .col4 {
+        padding-left: 0;
+    }
+
+    .detail-athlete .result .table .list-result .list .col4 {
+        color: #666;
+        font-size: 12px;
+    }
+
+    .related-athlete .related-list li {
+        width: 50%;
+        margin-bottom: 30px;
+    }
+
+    .related-athlete .related-list li .list a .name {
+        font-size: 14px;
+    }
+
+    .detail-news .related-posts .box-area .row .box {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 10%;
+    }
+
+    .detail-news .quick-links {
+        float: none;
+    }
+    
+    .detail-news .quick-links span.opener,
+    .detail-news .quick-links .list-select,
+    .detail-news .quick-links .btn-box {
+        display: none;
+    }
+
+    .detail-news .quick-links select.form-control {
+        display: block;
+        padding: 11px 23px 10px 13px;
+        margin: 0;
+        font: inherit;
+        outline: 0;
+        line-height: 1.2;
+        background: #fff;
+        border-radius: 0;
+        width: 100%;
+        border: 1px solid #ddd;
+        font-size: .836em;
+        line-height: 1.282em;
+        color: #acacac;
+        font-weight: 700;
+        text-transform: uppercase;
+        position: relative;
+    }
+
+    .detail-news .quick-links select.form-control:focus {
+        box-shadow: 0 0 0 transparent;
     }
 }
 

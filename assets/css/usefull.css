@@ -124,6 +124,26 @@
     background-position: 0 -1702px;
 }
 
+.innsburck1976,
+.innsburck1964,
+.tokyo2020,
+.red-banner {
+    background-color: #ed1d24 !important;
+    
+}
+
+.beijing2022 {
+    background-color: #1367a7 !important;
+}
+
+.blue-banner {
+    background-color: #0081c8 !important;
+}
+
+.red-banner {
+    margin-bottom: 0;
+}
+
 .heading {
     padding: 0 15px;
     display: flex;
