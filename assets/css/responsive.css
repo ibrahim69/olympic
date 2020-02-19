@@ -611,8 +611,23 @@
         justify-content: center;
     }
 
-    .detail-athlete .id-athlete {
-        display: none;
+    .detail-athlete .id-athlete .bio > div {
+        width: 100%;
+    }
+
+    .detail-athlete .id-athlete .bio .text-box {
+        flex-direction: column;
+        border-bottom: 0;
+        border-right: 1px solid #ddd;
+        border-left: 1px solid #ddd;
+    }
+
+    .detail-athlete .id-athlete .bio .slick-dots li.slick-active button:before {
+        color: #fff;
+    }
+
+    .detail-athlete .id-athlete .bio .text-box strong {
+        margin: 0 auto;
     }
 
     .detail-athlete .related-posts .box-area .row .box {
@@ -697,6 +712,10 @@
 
     .detail-news .quick-links select.form-control:focus {
         box-shadow: 0 0 0 transparent;
+    }
+
+    .athletes .masonry-slider .grid-item a img {
+        height: auto;
     }
 }
 

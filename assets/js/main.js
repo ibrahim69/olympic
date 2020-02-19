@@ -3,16 +3,64 @@ var $window = $(window);
 
 function checkWidth() {
     var windowsize = $window.width();
+
+    if (windowsize > 960 || windowsize == 768) {
+        $(".athletes .masonry-slider .slideshow").slick({
+            dots: false,
+            infinite: false,
+            slidesToScroll: 1
+        });
+
+        // init Masonry
+        var $grid = $('.grid').masonry({
+            itemSelector: '.grid-item',
+            percentPosition: true,
+            columnWidth: 1,
+            fitWidth: true
+        });
+
+        // layout Masonry after each image loads
+        $grid.imagesLoaded().progress( function() {
+            $grid.masonry();
+        });
+    } else {
+        $(".masonry-slider .slideshow").removeClass('slideshow');
+        $('.athletes .masonry-slider .grid').eq(1).css("display", "none");
+        $('.athletes .masonry-slider .grid').eq(2).css("display", "none");
+        $('.athletes .masonry-slider .grid .grid-item').removeClass('w-70 col w-40')
+        $('.athletes .masonry-slider .grid').slick({
+            dots: true,
+            infinite: false,
+            slidesToShow: 1,
+            slidesToScroll: 1
+        })
+    }
+
     if (windowsize <= 960) {
         $('.header-top.navbar-light').addClass('mobile-phone');
     } else {
         $('.header-top.navbar-light').removeClass('mobile-phone');
     }
+    
+    if (windowsize <= 767) {
+        $('.id-athlete .bio').slick({
+            dots: true,
+            infinite: false,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            arrows: false
+        })
+    } else {
+
+    }
 }
 // Execute on load
 checkWidth();
 // Bind event listener
-$(window).resize(checkWidth);
+$(window).resize(function() {
+    checkWidth;
+    location.reload();
+});
 
 
 // Hide Navbar When Scroll Down

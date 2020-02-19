@@ -291,7 +291,6 @@
                 <div class="container">
                     <div class="slideshow">
                         <div class="grid">
-                            <div class="grid-sizer"></div>
                             <div class="grid-item w-70">
                                 <a href="#">
                                     <img src="assets/images/athelete-1.jpg" alt="Athlete 1">
@@ -375,7 +374,6 @@
                         </div>
 
                         <div class="grid">
-                            <div class="grid-sizer"></div>
                             <div class="grid-item w-70">
                                 <a href="#">
                                     <img src="assets/images/athelete-1.jpg" alt="Athlete 1">
@@ -459,7 +457,6 @@
                         </div>
 
                         <div class="grid">
-                            <div class="grid-sizer"></div>
                             <div class="grid-item w-70">
                                 <a href="#">
                                     <img src="assets/images/athelete-1.jpg" alt="Athlete 1">
@@ -1386,26 +1383,6 @@
     <script src="assets/js/main.js"></script>
 
     <script>
-        // init Masonry
-        var $grid = $('.grid').masonry({
-            itemSelector: '.grid-item',
-            percentPosition: true,
-            columnWidth: 1,
-            fitWidth: true
-        });
-
-        // layout Masonry after each image loads
-        $grid.imagesLoaded().progress( function() {
-            $grid.masonry();
-        });
-    </script>
-
-    <script>
-        $(".masonry-slider .slideshow").slick({
-            dots: false,
-            infinite: false,
-            slidesToScroll: 1
-        });
 
         $(".carousel-athletes").slick({
             dots: false,
