@@ -249,13 +249,17 @@
 
 .mega-header .header-main .container .row .collapse .navbar-nav li.drop-down .mega-menu {
     position: absolute;
-    width: 100%;
+    width: auto;
     padding: 15px;
     display: none;
     transition-duration: 0.9s;
 }
 
-.mega-header .header-main .container .row .collapse .navbar-nav li.drop-down .mega-menu.display-on {
+.mega-header .header-main .container .row .collapse .navbar-nav li.drop-down .container.mega-menu {
+    width: 100%;
+}
+
+.mega-header .header-main .container .row .collapse .navbar-nav li.drop-down:hover .mega-menu {
     display: block;
     transition-duration: 0.9s;
     background-color: #fff;
@@ -374,8 +378,8 @@
     vertical-align: .255em;
     content: "";
     border-top: 0;
-    border-right: 3px solid #ccc;
-    border-bottom: 3px solid #ccc;
+    border-right: 2px solid #ccc;
+    border-bottom: 2px solid #ccc;
     border-left: 0;
     padding: 3px;
     transform: rotate(45deg);

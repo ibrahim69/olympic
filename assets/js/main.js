@@ -12,7 +12,7 @@ function checkWidth() {
         });
 
         // init Masonry
-        var $grid = $('.grid').masonry({
+        var $grid = $('.athletes .masonry-slider .grid').masonry({
             itemSelector: '.grid-item',
             percentPosition: true,
             columnWidth: 1,
@@ -87,13 +87,22 @@ $(window).scroll(function () {
 
 // $('.mobile-phone').sticky({topSpacing: 0});
 
-//drop down menu	
-$(".drop-down").hover(function() {
-    $('.mega-menu').addClass('display-on');
-});
-$(".drop-down").mouseleave(function() {
-    $('.mega-menu').removeClass('display-on');
-});
+//drop down menu
+// $(".drop-down").hover(function() {
+//     $('.mega-menu').addClass('display-on');
+// });
+// $(".drop-down").mouseleave(function() {
+//     $('.mega-menu').removeClass('display-on');
+// });
+
+// $('.header-main .navbar-nav').hover( function() {
+//     i = 0;
+//     j = 5
+//     if (i = 0, i <= j, i++) {
+
+//     }
+
+// })
 
 // Search Header
 $('.header-main .search').on('click', function() {
