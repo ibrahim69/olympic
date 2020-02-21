@@ -119,6 +119,12 @@
         top: 67px;
     }
 
+    .header-mobile .navbar-nav .dropdown-menu.show {
+        position: static !important;
+        transform: none !important;
+        text-align: center;
+    }
+
     .latest-news .carousel .slick-list .slick-track {
         margin: 0 auto;
     }
